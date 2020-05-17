@@ -1,0 +1,11 @@
+---
+
+- name: 開発でよく使うパッケージを入れる（Debian）
+  become: yes
+  apt:
+    name:
+      - tree
+      - make
+      - curl
+    update_cache: yes
+    cache_valid_time: 3600
