@@ -1,1 +1,10 @@
 = SQLServerについて
+
+----
+$ make up
+$ make db1
+
+on vm
+$ cd db
+$ make up
+----
