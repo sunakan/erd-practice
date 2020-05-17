@@ -29,5 +29,5 @@ up:
 clean:
 	docker container ls --quiet --filter='name=${DOCKER_MSSQL_HOST}' | xargs -I {} docker container stop {}
 
-wait-ready-for-sqlserver-container:
-	docker history mcr.microsoft.com/mssql/server:${DOCKER_MSSQL_TAG}
+wait-for-mssql:
+	bash wait-for-mssql.sh
