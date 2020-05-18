@@ -31,3 +31,13 @@ clean:
 
 wait-for-mssql:
 	bash wait-for-mssql.sh
+
+################################################################################
+# DBやユーザの初期化
+################################################################################
+#export MSSQL_DB_NAME=hoge-db
+#export MSSQL_USER_NAME=hoge-user
+#export MSSQL_USER_PASSWORD=Hoge-pass
+#create-db:
+#	docker exec -it ${DOCKER_MSSQL_HOST} \
+#		/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ${SA_PASSWORD} -t 30 \
